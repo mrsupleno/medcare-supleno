@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Martinha Côco - Médica de Família | Medcare</title>
+    <meta name="description" content="Dra. Martinha Côco - Médica de Família especialista em cuidado humanizado. Atendimento em Conceição do Castelo, ES.">
+    <meta name="keywords" content="médica de família, conceição do castelo, domingos martins, medcare, saúde, atendimento humanizado">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martinha.med.br/">
+    <meta property="og:title" content="Dra. Martinha Côco - Médica de Família">
+    <meta property="og:description" content="Médica de Família especialista em cuidado humanizado. Atendimento em Conceição do Castelo, ES.">
+    <meta property="og:image" content="https://martinha.med.br/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dra. Martinha Côco - Médica de Família">
+    <meta name="twitter:description" content="Médica de Família especialista em cuidado humanizado. Atendimento em Conceição do Castelo, ES.">
+    <meta name="twitter:image" content="https://martinha.med.br/og-image.jpg">
+    
+    <link rel="icon" type="image/jpeg" href="logo-medcare.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --green-light: #C8E6C9;
+            --teal: #6B9B9E;
+            --green-dark: #2E5D4F;
+            --white: #FFFFFF;
+            --gray-light: #F5F5F5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            color: var(--green-dark);
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .green-light-bg {
+            background-color: var(--green-light);
+        }
+        
+        .teal-bg {
+            background-color: var(--teal);
+        }
+        
+        .teal-text {
+            color: var(--teal);
+        }
+        
+        .green-dark-bg {
+            background-color: var(--green-dark);
+        }
+        
+        .btn-primary {
+            background-color: var(--teal);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid var(--teal);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--green-dark);
+            border-color: var(--green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--teal);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid var(--teal);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--teal);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--green-light) 0%, var(--teal) 100%);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--teal);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="logo-medcare.jpg" alt="Medcare" class="h-12 w-auto">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#sobre" class="hover:text-teal-600 transition">Sobre</a>
+                    <a href="#especialidades" class="hover:text-teal-600 transition">Especialidades</a>
+                    <a href="#depoimentos" class="hover:text-teal-600 transition">Depoimentos</a>
+                    <a href="#contato" class="hover:text-teal-600 transition">Contato</a>
+                </div>
+                <a href="https://wa.me/5528999464913" target="_blank" class="btn-primary text-sm md:text-base">
+                    Agendar Consulta
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center pt-24 md:pt-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl md:text-6xl font-bold serif mb-6 leading-tight">
+                        Cuidado humanizado para você e sua família
+                    </h1>
+                    <p class="text-xl mb-8 opacity-90">
+                        Dra. Martinha Côco - Médica de Família dedicada ao seu bem-estar integral
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5528999464913" target="_blank" class="btn-primary bg-white text-teal-600 hover:bg-gray-100 border-white hover:border-gray-100">
+                            <i class="fab fa-whatsapp mr-2"></i>Agendar Consulta
+                        </a>
+                    </div>
+                    <div class="mt-12 flex items-center space-x-6">
+                        <div>
+                            <p class="text-3xl font-bold">1.658</p>
+                            <p class="text-sm opacity-80">Seguidores</p>
+                        </div>
+                        <div class="h-12 w-px bg-white opacity-30"></div>
+                        <div>
+                            <p class="text-3xl font-bold">⭐ 5.0</p>
+                            <p class="text-sm opacity-80">Avaliação</p>
+                        </div>
+                        <div class="h-12 w-px bg-white opacity-30"></div>
+                        <div>
+                            <p class="text-sm opacity-80">CRM 12746 ES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:block mb-12">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-200 to-teal-300 opacity-20 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-gradient-to-br from-green-50 via-white to-teal-50 p-8 rounded-3xl shadow-2xl border border-green-100" style="background: linear-gradient(135deg, rgba(200, 230, 201, 0.3) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(200, 230, 201, 0.2) 100%);">
+                            <div class="text-center">
+                                <div class="w-48 h-48 mx-auto mb-6 overflow-hidden rounded-full shadow-lg ring-4 ring-green-100">
+                                    <img src="martinha.jpg" alt="Dra. Martinha Côco" class="w-full h-full object-cover">
+                                </div>
+                                <h3 class="text-2xl font-bold serif mb-2" style="color: #2c5f5d;">Dra. Martinha Côco</h3>
+                                <p class="teal-text font-semibold mb-4">Médica de Família</p>
+                                <div class="space-y-3 text-sm text-left">
+                                    <p><i class="fas fa-map-marker-alt teal-text mr-2"></i>Conceição do Castelo</p>
+                                    <p><i class="fas fa-id-card teal-text mr-2"></i>CRM 12746 ES</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold serif mb-6 teal-text">Sobre a Dra. Martinha</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Médica de Família comprometida com o cuidado integral de seus pacientes. Com foco no atendimento humanizado, 
+                    a Dra. Martinha Côco oferece consultas personalizadas, acompanhamento contínuo e tratamentos baseados em evidências científicas.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <i class="fas fa-heart text-5xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Atendimento Humanizado</h3>
+                    <p class="text-gray-600">Cuidado personalizado com foco no bem-estar integral</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-user-md text-5xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Experiência</h3>
+                    <p class="text-gray-600">Médica de Família com sólida formação e prática clínica</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-stethoscope text-5xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Cuidado Integral</h3>
+                    <p class="text-gray-600">Acompanhamento completo para todas as idades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades Section -->
+    <section id="especialidades" class="py-20 green-light-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold serif mb-6 teal-text">Especialidades</h2>
+                <p class="text-lg text-gray-600">Atendimento completo para toda a família</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card">
+                    <i class="fas fa-child text-4xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Pediatria</h3>
+                    <p class="text-gray-600">Acompanhamento do crescimento e desenvolvimento infantil</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-user-friends text-4xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Clínica Geral</h3>
+                    <p class="text-gray-600">Consultas para adultos e adolescentes</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-procedures text-4xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Geriatria</h3>
+                    <p class="text-gray-600">Cuidado especializado para idosos</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-file-medical text-4xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Atestados</h3>
+                    <p class="text-gray-600">Emissão de atestados médicos e laudos</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-heartbeat text-4xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Doenças Crônicas</h3>
+                    <p class="text-gray-600">Acompanhamento de diabetes, hipertensão e outras</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-shield-alt text-4xl teal-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Medicina Preventiva</h3>
+                    <p class="text-gray-600">Check-ups e prevenção de doenças</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold serif mb-6 teal-text">Como Funciona</h2>
+                <p class="text-lg text-gray-600">Agende sua consulta em 4 passos simples</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="step-number">1</div>
+                    <h3 class="text-xl font-bold mb-3">Entre em Contato</h3>
+                    <p class="text-gray-600">Via WhatsApp ou agende online</p>
+                </div>
+                <div class="text-center">
+                    <div class="step-number">2</div>
+                    <h3 class="text-xl font-bold mb-3">Escolha o Horário</h3>
+                    <p class="text-gray-600">Horários flexíveis para sua comodidade</p>
+                </div>
+                <div class="text-center">
+                    <div class="step-number">3</div>
+                    <h3 class="text-xl font-bold mb-3">Confirme a Consulta</h3>
+                    <p class="text-gray-600">Receba confirmação imediata</p>
+                </div>
+                <div class="text-center">
+                    <div class="step-number">4</div>
+                    <h3 class="text-xl font-bold mb-3">Seja Atendido</h3>
+                    <p class="text-gray-600">Atendimento humanizado e de qualidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="py-20 green-light-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold serif mb-6 teal-text">Depoimentos</h2>
+                <p class="text-lg text-gray-600">O que nossos pacientes dizem</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Atendimento excepcional! A Dra. Martinha é muito atenciosa e dedicada. Recomendo!"
+                    </p>
+                    <p class="font-semibold">— Paciente Satisfeito</p>
+                </div>
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Profissional competente e humana. Cuidou muito bem da minha família."
+                    </p>
+                    <p class="font-semibold">— Família Agradecida</p>
+                </div>
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Consultas sempre pontuais e com muito cuidado. Excelente médica!"
+                    </p>
+                    <p class="font-semibold">— Cliente Fiel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold serif mb-6 teal-text">Perguntas Frequentes</h2>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="card">
+                    <summary class="font-semibold cursor-pointer">Como agendar uma consulta?</summary>
+                    <p class="mt-3 text-gray-600">Você pode agendar via WhatsApp (28) 99946-4913.</p>
+                </details>
+                <details class="card">
+                    <summary class="font-semibold cursor-pointer">Quais formas de pagamento são aceitas?</summary>
+                    <p class="mt-3 text-gray-600">Aceitamos dinheiro, cartão de débito e crédito, e PIX.</p>
+                </details>
+                <details class="card">
+                    <summary class="font-semibold cursor-pointer">Onde fica o consultório?</summary>
+                    <p class="mt-3 text-gray-600">
+                        <strong>Edifício Imperial Center</strong><br>
+                        Av. José Grilo, 648 - Sala 313<br>
+                        Centro, Conceição do Castelo - ES
+                    </p>
+                </details>
+                <details class="card">
+                    <summary class="font-semibold cursor-pointer">Aceita plano de saúde?</summary>
+                    <p class="mt-3 text-gray-600">Entre em contato para verificar convênios disponíveis.</p>
+                </details>
+                <details class="card">
+                    <summary class="font-semibold cursor-pointer">Qual o horário de atendimento?</summary>
+                    <p class="mt-3 text-gray-600">Consulte disponibilidade via WhatsApp (28) 99946-4913.</p>
+                </details>
+                <details class="card">
+                    <summary class="font-semibold cursor-pointer">Atende emergências?</summary>
+                    <p class="mt-3 text-gray-600">Para emergências, procure o pronto-socorro mais próximo. Atendemos consultas agendadas.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section id="contato" class="py-20 teal-bg text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold serif mb-6">Pronto para cuidar da sua saúde?</h2>
+            <p class="text-xl mb-8 opacity-90">Agende sua consulta agora e experimente um atendimento humanizado</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5528999464913" target="_blank" class="btn-primary bg-white text-teal-600 hover:bg-gray-100 border-white hover:border-gray-100">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp (28) 99946-4913
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Localização -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold serif mb-6 teal-text">
+                    📍 Onde Estamos
+                </h2>
+                <p class="text-lg max-w-2xl mx-auto">
+                    Venha nos visitar em Conceição do Castelo
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-green-light">
+                    <div class="aspect-w-16 aspect-h-9" style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.8!2d-41.2464086!3d-20.358682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb987ae6e725049%3A0xa64beca53e5f1631!2sImperial%20Center!5e0!3m2!1spt-BR!2sbr!4v1738764100000!5m2!1spt-BR!2sbr"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-2xl font-bold mb-4">Edifício Imperial Center</h3>
+                        <div class="space-y-3 text-gray-600">
+                            <p class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt teal-text mt-1"></i>
+                                <span>Av. José Grilo, 648 - Sala 313<br>Centro, Conceição do Castelo - ES<br>CEP: 29370-000</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fas fa-phone teal-text"></i>
+                                <a href="tel:+5528999464913" class="hover:text-teal-600">(28) 99946-4913</a>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fas fa-clock teal-text"></i>
+                                <span>Segunda a Sexta: 08:00 - 18:00</span>
+                            </p>
+                        </div>
+                        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                            <a href="https://wa.me/5528999464913" target="_blank" class="btn-primary flex-1 text-center">
+                                <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                            </a>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Imperial+Center,Conceição+do+Castelo,ES&destination_place_id=ChIJSTByhG6uh5QRMRZfPlzKS6Y" target="_blank" class="btn-secondary flex-1 text-center">
+                                <i class="fas fa-directions mr-2"></i>Como Chegar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="green-dark-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="mb-4">
+                        <img src="logo-medcare.jpg" alt="Medcare" class="h-16 w-auto">
+                    </div>
+                    <p class="text-sm opacity-80">
+                        Cuidado médico humanizado para você e sua família
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fab fa-whatsapp mr-2"></i>(28) 99946-4913</li>
+                        <li><i class="fas fa-envelope mr-2"></i>Pelo WhatsApp</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Localização</h4>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Conceição do Castelo, ES</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/dramartinhacoco" target="_blank" class="hover:opacity-80 transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="https://wa.me/5528999464913" target="_blank" class="hover:opacity-80 transition">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-xs mt-4 opacity-60">CRM 12746 ES</p>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-60">
+                <p>&copy; 2026 Medcare - Serviços Médicos. Todos os direitos reservados.</p>
+                <p class="mt-2 text-xs">Site desenvolvido pela <a href="https://sucesso.net.br" target="_blank" class="hover:opacity-100 transition">Agência do Sucesso Empresarial</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // FAQ auto-close others
+        document.querySelectorAll('details').forEach(detail => {
+            detail.addEventListener('toggle', () => {
+                if (detail.open) {
+                    document.querySelectorAll('details').forEach(other => {
+                        if (other !== detail) other.open = false;
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
